@@ -26,24 +26,12 @@ def get_args():
     parser.add_argument('--pattern',
                         type=str,
                         required=True,
-                        help='Pattern string to be searched')
+                        help='Pattern string to be searched for')
     parser.add_argument('--rounds',
                         type=int,
                         default=10,
                         help='Number of rounds to run each algorithm ' \
                              + '(default: 10)')
-    # parser.add_argument('--out_file',
-    #                     type=str,
-    #                     required=True,
-    #                     help='File to save plot to')
-    parser.add_argument('--width',
-                        type=float,
-                        default=8,
-                        help='Width of plot in inches (default: 8)')
-    parser.add_argument('--height',
-                        type=float,
-                        default=5,
-                        help='Height of plot in inches (default: 5)')
     return parser.parse_args()
 
 def run_test(test_function, T, P):
