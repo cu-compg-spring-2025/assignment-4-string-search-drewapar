@@ -53,7 +53,7 @@ python src/test_string_search.py \
     --pattern 'AA' \
     --rounds 10 
 ```
-# Output:
+Output:
 ```
 Naive Search average runtime: [6610.3]
 Naive Search average memory usage: [144.0]
